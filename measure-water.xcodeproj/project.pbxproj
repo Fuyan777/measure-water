@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FD9297FE36D0003568A /* measure_waterApp.swift */; };
+		E7999FDC297FE36D0003568A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FDB297FE36D0003568A /* ContentView.swift */; };
+		E7999FDE297FE36E0003568A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7999FDD297FE36E0003568A /* Assets.xcassets */; };
+		E7999FE2297FE36E0003568A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7999FE1297FE36E0003568A /* Preview Assets.xcassets */; };
+		E7999FEC297FE36E0003568A /* measure_waterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FEB297FE36E0003568A /* measure_waterTests.swift */; };
+		E7999FF6297FE36E0003568A /* measure_waterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FF5297FE36E0003568A /* measure_waterUITests.swift */; };
+		E7999FF8297FE36E0003568A /* measure_waterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FF7297FE36E0003568A /* measure_waterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7999FE8297FE36E0003568A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7999FCE297FE36D0003568A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7999FD5297FE36D0003568A;
+			remoteInfo = "measure-water";
+		};
+		E7999FF2297FE36E0003568A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7999FCE297FE36D0003568A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7999FD5297FE36D0003568A;
+			remoteInfo = "measure-water";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7999FD6297FE36D0003568A /* measure-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "measure-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7999FD9297FE36D0003568A /* measure_waterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterApp.swift; sourceTree = "<group>"; };
+		E7999FDB297FE36D0003568A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7999FDD297FE36E0003568A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7999FDF297FE36E0003568A /* measure_water.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = measure_water.entitlements; sourceTree = "<group>"; };
+		E7999FE1297FE36E0003568A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7999FE7297FE36E0003568A /* measure-waterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "measure-waterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7999FEB297FE36E0003568A /* measure_waterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterTests.swift; sourceTree = "<group>"; };
+		E7999FF1297FE36E0003568A /* measure-waterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "measure-waterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7999FF5297FE36E0003568A /* measure_waterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterUITests.swift; sourceTree = "<group>"; };
+		E7999FF7297FE36E0003568A /* measure_waterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7999FD3297FE36D0003568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FE4297FE36E0003568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FEE297FE36E0003568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7999FCD297FE36D0003568A = {
+			isa = PBXGroup;
+			children = (
+				E7999FD8297FE36D0003568A /* measure-water */,
+				E7999FEA297FE36E0003568A /* measure-waterTests */,
+				E7999FF4297FE36E0003568A /* measure-waterUITests */,
+				E7999FD7297FE36D0003568A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7999FD7297FE36D0003568A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FD6297FE36D0003568A /* measure-water.app */,
+				E7999FE7297FE36E0003568A /* measure-waterTests.xctest */,
+				E7999FF1297FE36E0003568A /* measure-waterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7999FD8297FE36D0003568A /* measure-water */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FD9297FE36D0003568A /* measure_waterApp.swift */,
+				E7999FDB297FE36D0003568A /* ContentView.swift */,
+				E7999FDD297FE36E0003568A /* Assets.xcassets */,
+				E7999FDF297FE36E0003568A /* measure_water.entitlements */,
+				E7999FE0297FE36E0003568A /* Preview Content */,
+			);
+			path = "measure-water";
+			sourceTree = "<group>";
+		};
+		E7999FE0297FE36E0003568A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FE1297FE36E0003568A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7999FEA297FE36E0003568A /* measure-waterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FEB297FE36E0003568A /* measure_waterTests.swift */,
+			);
+			path = "measure-waterTests";
+			sourceTree = "<group>";
+		};
+		E7999FF4297FE36E0003568A /* measure-waterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FF5297FE36E0003568A /* measure_waterUITests.swift */,
+				E7999FF7297FE36E0003568A /* measure_waterUITestsLaunchTests.swift */,
+			);
+			path = "measure-waterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7999FD5297FE36D0003568A /* measure-water */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7999FFB297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-water" */;
+			buildPhases = (
+				E7999FD2297FE36D0003568A /* Sources */,
+				E7999FD3297FE36D0003568A /* Frameworks */,
+				E7999FD4297FE36D0003568A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "measure-water";
+			productName = "measure-water";
+			productReference = E7999FD6297FE36D0003568A /* measure-water.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7999FE6297FE36E0003568A /* measure-waterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7999FFE297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-waterTests" */;
+			buildPhases = (
+				E7999FE3297FE36E0003568A /* Sources */,
+				E7999FE4297FE36E0003568A /* Frameworks */,
+				E7999FE5297FE36E0003568A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7999FE9297FE36E0003568A /* PBXTargetDependency */,
+			);
+			name = "measure-waterTests";
+			productName = "measure-waterTests";
+			productReference = E7999FE7297FE36E0003568A /* measure-waterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7999FF0297FE36E0003568A /* measure-waterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E799A001297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-waterUITests" */;
+			buildPhases = (
+				E7999FED297FE36E0003568A /* Sources */,
+				E7999FEE297FE36E0003568A /* Frameworks */,
+				E7999FEF297FE36E0003568A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7999FF3297FE36E0003568A /* PBXTargetDependency */,
+			);
+			name = "measure-waterUITests";
+			productName = "measure-waterUITests";
+			productReference = E7999FF1297FE36E0003568A /* measure-waterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7999FCE297FE36D0003568A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E7999FD5297FE36D0003568A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E7999FE6297FE36E0003568A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E7999FD5297FE36D0003568A;
+					};
+					E7999FF0297FE36E0003568A = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E7999FD5297FE36D0003568A;
+					};
+				};
+			};
+			buildConfigurationList = E7999FD1297FE36D0003568A /* Build configuration list for PBXProject "measure-water" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7999FCD297FE36D0003568A;
+			productRefGroup = E7999FD7297FE36D0003568A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7999FD5297FE36D0003568A /* measure-water */,
+				E7999FE6297FE36E0003568A /* measure-waterTests */,
+				E7999FF0297FE36E0003568A /* measure-waterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7999FD4297FE36D0003568A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7999FE2297FE36E0003568A /* Preview Assets.xcassets in Resources */,
+				E7999FDE297FE36E0003568A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FE5297FE36E0003568A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FEF297FE36E0003568A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7999FD2297FE36D0003568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7999FDC297FE36D0003568A /* ContentView.swift in Sources */,
+				E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FE3297FE36E0003568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7999FEC297FE36E0003568A /* measure_waterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7999FED297FE36E0003568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7999FF6297FE36E0003568A /* measure_waterUITests.swift in Sources */,
+				E7999FF8297FE36E0003568A /* measure_waterUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7999FE9297FE36E0003568A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7999FD5297FE36D0003568A /* measure-water */;
+			targetProxy = E7999FE8297FE36E0003568A /* PBXContainerItemProxy */;
+		};
+		E7999FF3297FE36E0003568A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7999FD5297FE36D0003568A /* measure-water */;
+			targetProxy = E7999FF2297FE36E0003568A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E7999FF9297FE36E0003568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7999FFA297FE36E0003568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E7999FFC297FE36E0003568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "measure-water/measure_water.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"measure-water/Preview Content\"";
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-water";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7999FFD297FE36E0003568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "measure-water/measure_water.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"measure-water/Preview Content\"";
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-water";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7999FFF297FE36E0003568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-waterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/measure-water.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/measure-water";
+			};
+			name = Debug;
+		};
+		E799A000297FE36E0003568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-waterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/measure-water.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/measure-water";
+			};
+			name = Release;
+		};
+		E799A002297FE36E0003568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-waterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "measure-water";
+			};
+			name = Debug;
+		};
+		E799A003297FE36E0003568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 65Z68H8WQ6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-waterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "measure-water";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7999FD1297FE36D0003568A /* Build configuration list for PBXProject "measure-water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7999FF9297FE36E0003568A /* Debug */,
+				E7999FFA297FE36E0003568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7999FFB297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7999FFC297FE36E0003568A /* Debug */,
+				E7999FFD297FE36E0003568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7999FFE297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-waterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7999FFF297FE36E0003568A /* Debug */,
+				E799A000297FE36E0003568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E799A001297FE36E0003568A /* Build configuration list for PBXNativeTarget "measure-waterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E799A002297FE36E0003568A /* Debug */,
+				E799A003297FE36E0003568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7999FCE297FE36D0003568A /* Project object */;
+}
