@@ -15,6 +15,11 @@ struct ContentView: View {
     @State var coinPositionX: CGFloat = 0.0
     @State var coinPositionY: CGFloat = 0.0
     @State var coinRotateDegree: Double = 0.0
+    @State var measuringTextOpacity = 0.0
+    
+    @State var tmpMeasureTime = 0
+
+    @StateObject var appState = AppState()
     
     var body: some View {
         VStack {
@@ -25,10 +30,17 @@ struct ContentView: View {
                 .fontWeight(.bold)
             
             HStack(alignment: .center, spacing: 40) {
-                MeasureValueLabelView(
-                    day: "昨日",
-                    measureValue: "10"
-                )
+                VStack(alignment: .center, spacing: 8) {
+                    Text("昨日")
+                    HStack {
+                        Text("0.0")
+                            .frame(width: 80)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.accentColor)
+                        Text("L")
+                    }
+                }
                 
                 Rectangle()
                     .fill(Color.black)
@@ -36,10 +48,16 @@ struct ContentView: View {
                 
                 MeasureValueLabelView(
                     day: "今日",
-                    measureValue: "30"
+                    appState: appState,
+                    time: $tmpMeasureTime
                 )
             }
             .font(.title2)
+
+            Text("〜計測中〜")
+                .opacity(measuringTextOpacity)
+                .animation(appState.isStartSoundDetection ? .easeOut(duration: 0.7).repeatForever(autoreverses: true) : nil,
+                           value: appState.isStartSoundDetection)
             
             Spacer().frame(height: 70)
             
@@ -47,7 +65,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     ZStack {
-                        if isVisibleImageCoin {
+                        if appState.detectionStates[0].1.isDetected && isButtonStart == true {
                             Image("img-coin")
                                 .resizable()
                                 .scaledToFit()
@@ -77,8 +95,10 @@ struct ContentView: View {
                                 }
                                 .onDisappear {
                                     // animation
+                                    isStartingCoinAnimation = false
                                     coinPositionY = 0.0
                                     coinRotateDegree = 0
+                                    tmpMeasureTime = appState.detectionStates[0].1.time
                                 }
                         }
                     }
@@ -100,11 +120,14 @@ struct ContentView: View {
                 
                 if isButtonStart {
                     buttonText = "ストップ"
-                    isVisibleImageCoin = true
+                    appState.restartDetection()
+                    measuringTextOpacity = 1.0
                 } else {
                     buttonText = "スタート"
+                    appState.stopDetection()
                     isVisibleImageCoin = false
                     isStartingCoinAnimation = false
+                    measuringTextOpacity = 0.0
                 }
             }){
                 Text(buttonText)
@@ -124,21 +147,34 @@ struct ContentView: View {
 
 struct MeasureValueLabelView: View {
     var day = ""
-    @State var measureValue = ""
+    @ObservedObject var appState: AppState
+    @Binding var time: Int
     
     var body: some View {
         VStack(alignment: .center, spacing: 8) {
             Text(day)
             HStack {
-                Text(measureValue)
+                Text(
+                    appState.isStartSoundDetection
+                    ? String(format: "%.1f", MeasureValueLabelView.convertLiter(appState.detectionStates[0].1.time))
+                    : String(format: "%.1f", MeasureValueLabelView.convertLiter(time))
+                )
+                    .frame(width: 80)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.accentColor)
-                Text("ml")
+                Text("L")
             }
         }
     }
 }
+
+extension MeasureValueLabelView {
+    static func convertLiter(_ time: Int) -> Double {
+        return Double(time) * 0.2
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

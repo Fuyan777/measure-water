@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E734F3C8298FD027004D2F77 /* SystemAudioClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3C7298FD027004D2F77 /* SystemAudioClassifier.swift */; };
+		E734F3CB298FD17A004D2F77 /* ClassificationResultsSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3CA298FD17A004D2F77 /* ClassificationResultsSubject.swift */; };
+		E734F3CD298FD1BF004D2F77 /* DetectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3CC298FD1BF004D2F77 /* DetectionState.swift */; };
+		E734F3D0298FD20E004D2F77 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3CF298FD20E004D2F77 /* TimerModel.swift */; };
+		E734F3D2298FD227004D2F77 /* SoundIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */; };
+		E734F3D5298FD2BB004D2F77 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3D4298FD2BA004D2F77 /* AppState.swift */; };
 		E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FD9297FE36D0003568A /* measure_waterApp.swift */; };
 		E7999FDC297FE36D0003568A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FDB297FE36D0003568A /* ContentView.swift */; };
 		E7999FDE297FE36E0003568A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7999FDD297FE36E0003568A /* Assets.xcassets */; };
@@ -34,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E734F3C7298FD027004D2F77 /* SystemAudioClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioClassifier.swift; sourceTree = "<group>"; };
+		E734F3CA298FD17A004D2F77 /* ClassificationResultsSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResultsSubject.swift; sourceTree = "<group>"; };
+		E734F3CC298FD1BF004D2F77 /* DetectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionState.swift; sourceTree = "<group>"; };
+		E734F3CF298FD20E004D2F77 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundIdentifier.swift; sourceTree = "<group>"; };
+		E734F3D4298FD2BA004D2F77 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		E7999FD6297FE36D0003568A /* measure-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "measure-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7999FD9297FE36D0003568A /* measure_waterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterApp.swift; sourceTree = "<group>"; };
 		E7999FDB297FE36D0003568A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E734F3C6298FCF6A004D2F77 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E734F3C7298FD027004D2F77 /* SystemAudioClassifier.swift */,
+				E734F3CC298FD1BF004D2F77 /* DetectionState.swift */,
+				E734F3D4298FD2BA004D2F77 /* AppState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		E734F3C9298FD165004D2F77 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				E734F3CA298FD17A004D2F77 /* ClassificationResultsSubject.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
+		E734F3CE298FD203004D2F77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E734F3CF298FD20E004D2F77 /* TimerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E7999FCD297FE36D0003568A = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +133,15 @@
 		E7999FD8297FE36D0003568A /* measure-water */ = {
 			isa = PBXGroup;
 			children = (
+				E734F3CE298FD203004D2F77 /* Model */,
+				E734F3C9298FD165004D2F77 /* Observer */,
+				E734F3C6298FCF6A004D2F77 /* State */,
 				E7999FD9297FE36D0003568A /* measure_waterApp.swift */,
 				E7999FDB297FE36D0003568A /* ContentView.swift */,
 				E7999FDD297FE36E0003568A /* Assets.xcassets */,
 				E7999FDF297FE36E0003568A /* measure_water.entitlements */,
 				E7999FE0297FE36E0003568A /* Preview Content */,
+				E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */,
 			);
 			path = "measure-water";
 			sourceTree = "<group>";
@@ -261,6 +303,12 @@
 			files = (
 				E7999FDC297FE36D0003568A /* ContentView.swift in Sources */,
 				E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */,
+				E734F3CD298FD1BF004D2F77 /* DetectionState.swift in Sources */,
+				E734F3D5298FD2BB004D2F77 /* AppState.swift in Sources */,
+				E734F3D0298FD20E004D2F77 /* TimerModel.swift in Sources */,
+				E734F3C8298FD027004D2F77 /* SystemAudioClassifier.swift in Sources */,
+				E734F3CB298FD17A004D2F77 /* ClassificationResultsSubject.swift in Sources */,
+				E734F3D2298FD227004D2F77 /* SoundIdentifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +467,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを使用します。";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -457,6 +506,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを使用します。";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
