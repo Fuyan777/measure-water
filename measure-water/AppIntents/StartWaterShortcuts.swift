@@ -40,7 +40,7 @@ struct Shortcuts: AppShortcutsProvider {
         AppShortcut(
             intent: StartWater(),
             phrases: [
-                "\(.applicationName)で計測して",
+                "お水を測って",
                 "\(.applicationName)をスタート",
                 "\(.applicationName)の水の計測する"
             ]
@@ -48,8 +48,8 @@ struct Shortcuts: AppShortcutsProvider {
         AppShortcut(
             intent: StopWater(),
             phrases: [
-                "\(.applicationName)で計測をやめて",
                 "\(.applicationName)をストップ",
+                "\(.applicationName)で計測をやめて",
                 "\(.applicationName)の水の計測を終了する"
             ]
         )

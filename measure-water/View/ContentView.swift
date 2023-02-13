@@ -36,7 +36,7 @@ struct ContentView: View {
         VStack {
             Spacer().frame(height: 30)
             
-            Text("水の使用量")
+            Text("水の消費量")
                 .font(.title)
                 .fontWeight(.bold)
             
@@ -192,11 +192,6 @@ struct ContentView: View {
                     .background(Color.accentColor)
                     .cornerRadius(8)
                     .padding(.bottom, 56)
-            }
-            
-            if let url = URL(string: "https://forms.gle/x6uEdqZTHSkWQT8k7") {
-                Link("アンケート回答はこちらをタップ", destination: url)
-                    .foregroundColor(.blue)
             }
         }
         .padding()

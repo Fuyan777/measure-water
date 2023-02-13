@@ -1,8 +1,15 @@
 # measure-water
 
-水の使用量を計測するアプリ
+水の消費量を計測するアプリ
 
-# screen shot
+### Demo
 
-<img width="376" alt="スクリーンショット 2023-02-07 11 25 48" src="https://user-images.githubusercontent.com/29572313/217132120-105fbf2a-0426-4ee8-b095-4f8a50769a67.png">
+<img src="https://user-images.githubusercontent.com/29572313/218459537-a2e0b098-c55d-462b-9490-99e7b5038c86.gif" width="300">
 
+### 概要
+
+<img src="https://user-images.githubusercontent.com/29572313/218460414-5c6b0aee-bfbc-4dc6-9eba-9504e0100ac8.png" width="400">
+
+### 説明スライドリンク
+
+https://docs.google.com/presentation/d/1d4QEByBZfNTpHVYB_C3qCczktY2HgvUWtMf_OM3f09s/edit?usp=sharing
