@@ -13,6 +13,10 @@
 		E734F3D0298FD20E004D2F77 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3CF298FD20E004D2F77 /* TimerModel.swift */; };
 		E734F3D2298FD227004D2F77 /* SoundIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */; };
 		E734F3D5298FD2BB004D2F77 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734F3D4298FD2BA004D2F77 /* AppState.swift */; };
+		E7917E08299670D2008AB613 /* ButtonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7917E07299670D2008AB613 /* ButtonManager.swift */; };
+		E7917E0B299671CB008AB613 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7917E0A299671CB008AB613 /* LabelView.swift */; };
+		E7917E0D2996720B008AB613 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7917E0C2996720B008AB613 /* CoinImageView.swift */; };
+		E7917E0F29968073008AB613 /* StartWaterShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7917E0E29968073008AB613 /* StartWaterShortcuts.swift */; };
 		E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FD9297FE36D0003568A /* measure_waterApp.swift */; };
 		E7999FDC297FE36D0003568A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7999FDB297FE36D0003568A /* ContentView.swift */; };
 		E7999FDE297FE36E0003568A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7999FDD297FE36E0003568A /* Assets.xcassets */; };
@@ -46,6 +50,10 @@
 		E734F3CF298FD20E004D2F77 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundIdentifier.swift; sourceTree = "<group>"; };
 		E734F3D4298FD2BA004D2F77 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E7917E07299670D2008AB613 /* ButtonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonManager.swift; sourceTree = "<group>"; };
+		E7917E0A299671CB008AB613 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		E7917E0C2996720B008AB613 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
+		E7917E0E29968073008AB613 /* StartWaterShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWaterShortcuts.swift; sourceTree = "<group>"; };
 		E7999FD6297FE36D0003568A /* measure-water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "measure-water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7999FD9297FE36D0003568A /* measure_waterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = measure_waterApp.swift; sourceTree = "<group>"; };
 		E7999FDB297FE36D0003568A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,8 +114,28 @@
 			isa = PBXGroup;
 			children = (
 				E734F3CF298FD20E004D2F77 /* TimerModel.swift */,
+				E7917E07299670D2008AB613 /* ButtonManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7917E09299671BA008AB613 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7999FD9297FE36D0003568A /* measure_waterApp.swift */,
+				E7999FDB297FE36D0003568A /* ContentView.swift */,
+				E7917E0A299671CB008AB613 /* LabelView.swift */,
+				E7917E0C2996720B008AB613 /* CoinImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7917E1029968090008AB613 /* AppIntents */ = {
+			isa = PBXGroup;
+			children = (
+				E7917E0E29968073008AB613 /* StartWaterShortcuts.swift */,
+			);
+			path = AppIntents;
 			sourceTree = "<group>";
 		};
 		E7999FCD297FE36D0003568A = {
@@ -133,15 +161,14 @@
 		E7999FD8297FE36D0003568A /* measure-water */ = {
 			isa = PBXGroup;
 			children = (
+				E7917E1029968090008AB613 /* AppIntents */,
+				E7917E09299671BA008AB613 /* View */,
+				E7999FDF297FE36E0003568A /* measure_water.entitlements */,
+				E7BCD298299615AA00E817DE /* Resource */,
 				E734F3CE298FD203004D2F77 /* Model */,
 				E734F3C9298FD165004D2F77 /* Observer */,
 				E734F3C6298FCF6A004D2F77 /* State */,
-				E7999FD9297FE36D0003568A /* measure_waterApp.swift */,
-				E7999FDB297FE36D0003568A /* ContentView.swift */,
-				E7999FDD297FE36E0003568A /* Assets.xcassets */,
-				E7999FDF297FE36E0003568A /* measure_water.entitlements */,
 				E7999FE0297FE36E0003568A /* Preview Content */,
-				E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */,
 			);
 			path = "measure-water";
 			sourceTree = "<group>";
@@ -169,6 +196,15 @@
 				E7999FF7297FE36E0003568A /* measure_waterUITestsLaunchTests.swift */,
 			);
 			path = "measure-waterUITests";
+			sourceTree = "<group>";
+		};
+		E7BCD298299615AA00E817DE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E734F3D1298FD227004D2F77 /* SoundIdentifier.swift */,
+				E7999FDD297FE36E0003568A /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,14 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7917E0F29968073008AB613 /* StartWaterShortcuts.swift in Sources */,
 				E7999FDC297FE36D0003568A /* ContentView.swift in Sources */,
 				E7999FDA297FE36D0003568A /* measure_waterApp.swift in Sources */,
 				E734F3CD298FD1BF004D2F77 /* DetectionState.swift in Sources */,
 				E734F3D5298FD2BB004D2F77 /* AppState.swift in Sources */,
+				E7917E0D2996720B008AB613 /* CoinImageView.swift in Sources */,
 				E734F3D0298FD20E004D2F77 /* TimerModel.swift in Sources */,
 				E734F3C8298FD027004D2F77 /* SystemAudioClassifier.swift in Sources */,
 				E734F3CB298FD17A004D2F77 /* ClassificationResultsSubject.swift in Sources */,
 				E734F3D2298FD227004D2F77 /* SoundIdentifier.swift in Sources */,
+				E7917E08299670D2008AB613 /* ButtonManager.swift in Sources */,
+				E7917E0B299671CB008AB613 /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "measure-water/measure_water.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"measure-water/Preview Content\"";
@@ -467,6 +508,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "みず";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを使用します。";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -476,20 +518,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-water";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -499,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "measure-water/measure_water.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"measure-water/Preview Content\"";
@@ -506,6 +550,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "みず";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "マイクを使用します。";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -515,20 +560,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "devpuyan.measure-water";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -13,14 +13,16 @@ class AppState: ObservableObject {
     private var detectionCancellable: AnyCancellable? = nil
     private var appConfig = AppConfiguration(monitoredSounds: [SoundIdentifier(labelName: "water"),
                                                                SoundIdentifier(labelName: "water_tap_faucet")])
-
-    @Published var detectionStates: [(SoundIdentifier, DetectionState)] = [(SoundIdentifier(labelName: "water"), DetectionState(presenceThreshold: 0.5,
-                                                                                                                                absenceThreshold: 0.3,
-                                                                                                                                presenceMeasurementsToStartDetection: 2,
-                                                                                                                                absenceMeasurementsToEndDetection: 10))]
+    
+    @Published var detectionStates: [(SoundIdentifier, DetectionState)] = [
+        (SoundIdentifier(labelName: "water"), DetectionState(presenceThreshold: 0.5,
+                                                             absenceThreshold: 0.3,
+                                                             presenceMeasurementsToStartDetection: 2,
+                                                             absenceMeasurementsToEndDetection: 10))
+    ]
     @Published var soundDetectionIsRunning: Bool = false
     @Published var isStartSoundDetection: Bool = false
-
+    
     let timerModel = TimerModel()
 
     func restartDetection() {
