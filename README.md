@@ -1,6 +1,4 @@
-# measure-water
-
-水の消費量を計測するアプリ
+# 水の消費量を計測するアプリ「MoniTer」
 
 ### Demo
 
